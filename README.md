@@ -1,6 +1,4 @@
-# Getting Started with Create React App
-
-Данный проект был реализован с помощью [React Create App] (https://ru.reactjs.org/docs/create-a-new-react-app.html)
+# Данный проект был реализован с помощью [React Create App] (https://ru.reactjs.org/docs/create-a-new-react-app.html)
 
 ## Скрипт для запуска
 
