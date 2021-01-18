@@ -1,0 +1,14 @@
+.card__items {
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  max-width: 246px;
+  margin: 21px 15px 24px 21px;
+}
+
+@media screen and (max-width: 662px) {
+  .card__items {
+    min-width: 246px;
+    margin: 25px auto 28px;
+  }
+}

@@ -1,0 +1,19 @@
+.profile__edit-avatar {
+  background: url("../../../image/pen-icon.png") no-repeat 50%; /*url repeat position*/
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  opacity: 0;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.profile__edit-avatar:hover {
+  opacity: 1;
+}

@@ -1,0 +1,33 @@
+.popup__card {
+  max-width: 837px;
+  max-height: 562px;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+@media screen and (max-width: 880px) {
+  .popup__card {
+    max-width: 650px;
+  }
+}
+
+@media screen and (max-width: 753px) {
+  .popup__card {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .popup__card {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .popup__card {
+    max-width: 240px;
+    max-height: 299px;
+  }
+}

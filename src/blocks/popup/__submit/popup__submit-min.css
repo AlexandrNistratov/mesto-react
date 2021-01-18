@@ -1,0 +1,7 @@
+@media screen and (max-width: 414px) {
+  .popup__submit {
+    height: 50px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
