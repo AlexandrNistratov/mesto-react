@@ -1,5 +1,5 @@
 .profile__edit-avatar {
-  background: url("../../../image/pen-icon.png") no-repeat 50%; /*url repeat position*/
+  background: url("../../../image/pen-icon.svg") no-repeat 50%; /*url repeat position*/
   position: absolute;
   width: 26px;
   height: 26px;

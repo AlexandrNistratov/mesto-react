@@ -30,10 +30,9 @@ function Main({ onEditAvatar, onEditProfile, onAddPlace,  handleCardClick}) {
                     <div className="profile__info">
                         <div className="profile__avatar">
                             <img className="profile__avatar-image" src={userAvatar} alt="Аватарка"  />
-                            <div className="profile__overlay" >
-                                <button className="profile__edit-avatar"
-                                onClick={onEditAvatar}>
-                                </button>
+                            <div className="profile__overlay"
+                                 onClick={onEditAvatar}>
+                                <button className="profile__edit-avatar"></button>
                             </div>
                         </div>
                         <div className="profile__text">
