@@ -7,13 +7,8 @@
   margin: 0;
   box-sizing: border-box;
   border: none;
-  opacity: 0;
+  display: none;
   cursor: pointer;
   justify-content: center;
   align-items: center;
-
-}
-
-.profile__edit-avatar:hover {
-  opacity: 1;
 }
