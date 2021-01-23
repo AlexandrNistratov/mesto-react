@@ -4,7 +4,7 @@ class Api {
     this._headers = config.headers;
   }
 
-  getUserApi () {
+  getUserInfo () {
     return fetch('https://mesto.nomoreparties.co/v1/cohort-18/users/me', {
       method: 'GET',
       headers: this._headers
@@ -17,7 +17,7 @@ class Api {
     })
   }
 
-  addUserApi (data) {
+  addUserInfo (data) {
     return fetch('https://mesto.nomoreparties.co/v1/cohort-18/users/me', {
       method: 'PATCH',
       headers: this._headers,
