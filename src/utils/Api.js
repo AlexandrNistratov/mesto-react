@@ -22,8 +22,8 @@ class Api {
       method: 'PATCH',
       headers: this._headers,
       body: JSON.stringify({
-        name: data.firstname,
-        about: data.career
+        name: data.name,
+        about: data.about
       })
     }).then((res) => {
       if (res.ok) {
@@ -108,7 +108,7 @@ class Api {
       method: 'PATCH',
       headers: this._headers,
       body: JSON.stringify({
-        avatar: data.link
+        avatar: data.avatar
       })
     }).then((res) => {
       if (res.ok) {
