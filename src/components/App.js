@@ -46,21 +46,21 @@ function App() {
         setEditAvatarPopupOpen(false);
         setEditProfilePopupOpen(false);
         setAddPlacePopupOpen(false);
-        setSelectedCard(false);
+        setSelectedCard(null);
     }
     //Изменение инфо
     function handleUpdateUser(data) {
         api.addUserInfo(data).then((res) => {
             setCurrentUser(res);
             closeAllPopups();
-        })
+        }).catch((err) => alert(err));
     }
     // Изменение аватара
     function handleUpdateAvatar(data) {
         api.addUserAvatar(data).then((res) => {
             setCurrentUser(res);
             closeAllPopups();
-        })
+        }).catch((err) => alert(err));
     }
     //Отрисовка карточек с сервера
     const [cards, setCards] = React.useState([]);
@@ -89,7 +89,7 @@ function App() {
                 const newCards = cards.map((c) => c._id === card._id ? newCard : c);
                 // Обновляем стейт
                 setCards(newCards);
-            })
+            }).catch((err) => alert(err))
         )
     };
     // Удаление карточки

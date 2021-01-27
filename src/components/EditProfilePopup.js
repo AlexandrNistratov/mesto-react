@@ -32,10 +32,11 @@ function EditProfilePopup({isOpen, onClose, onUpdateUser }) {
 
     return(
         <PopupWithForm
-            name="popup__info"
-            container="popup__container-min"
+            name="info"
+            container="min"
             title="Редактировать профиль"
-            submit="popup__submit-min"
+            submit="min"
+            textSubmitButton="Сохранить"
             isOpen={isOpen}
             onClose={onClose}
             onSubmit={handleSubmit}
@@ -48,7 +49,6 @@ function EditProfilePopup({isOpen, onClose, onUpdateUser }) {
                    maxLength="200"
                    type="text" placeholder="Работа" name="career" value={description || ''} onChange={handleChangeDescription} />
             <span className="error" id="user-career-error"></span>
-            <button className="popup__submit popup__submit-min" type="submit">Сохранить</button>
         </PopupWithForm>
     )
 }

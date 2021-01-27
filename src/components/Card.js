@@ -1,5 +1,4 @@
 import React from 'react'
-import '../index.css';
 import { CurrentUserContext } from '../contexts/CurrentUserContext';
 
 function Card({card, onCardClick, onCardLike, onCardDelete}) {

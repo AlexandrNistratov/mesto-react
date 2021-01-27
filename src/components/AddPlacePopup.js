@@ -12,16 +12,21 @@ function AddPlacePopup({isOpen, onClose, onAddPlace}) {
             name: newCardNameRef.current.value,
             link: newCardLinkRef.current.value
         });
+    }
+    React.useEffect(() => {
+        if(isOpen){
             newCardNameRef.current.value = '';
             newCardLinkRef.current.value = '';
-    }
+        }
+    },[isOpen])
 
     return(
         <PopupWithForm
-            name="popup__add-image"
+            name="add-image"
             title="Новое место"
-            submit="popup__save-image-button"
-            type="popup__title-min"
+            type="min"
+            submit="image-button"
+            textSubmitButton="Создать"
             isOpen={isOpen}
             onClose={onClose}
             onSubmit={handleSubmit}
@@ -34,7 +39,6 @@ function AddPlacePopup({isOpen, onClose, onAddPlace}) {
                    placeholder="Ссылка на картинку"
                    name="link" ref={newCardLinkRef} />
             <span className="error" id="link-error"></span>
-            <button className="popup__submit popup__save-image-button" type="submit">Создать</button>
         </PopupWithForm>
     )
 }
